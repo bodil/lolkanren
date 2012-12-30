@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "dependencies": {
     "underscore": "1.4.3",
-    "chai": "1.4.2"
+    "chai": "1.4.2",
+    "mocha": ""
+  },
+  "scripts": {
+    "test": "mocha test.js"
   }
 }
