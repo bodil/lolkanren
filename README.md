@@ -3,6 +3,8 @@
 A dumb Javascript micro-Kanren, based on Oleg Kiselyov's
 [sokuza-kanren.scm](http://okmij.org/ftp/Scheme/sokuza-kanren.scm).
 
+[![Build Status](https://travis-ci.org/bodil/lolkanren.png)](https://travis-ci.org/bodil/lolkanren)
+
 # License
 
 Copyright 2012 Bodil Stokke
