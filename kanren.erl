@@ -101,10 +101,9 @@ unify(Term, _, Term, _, S) -> S;
 unify(T1, true, T2, _, S) -> ext_s(T1, T2, S);
 unify(T1, _, T2, true, S) -> ext_s(T2, T1, S);
 unify([H1|T1], _, [H2|T2], _, S) ->
-    S2 = unify(H1, H2, S),
-    case S2 of
+    case unify(H1, H2, S) of
         false -> false;
-        _ -> unify(T1, T2, S2)
+        S2 -> unify(T1, T2, S2)
     end;
 unify(_, _, _, _, _) -> false.
 
