@@ -1,4 +1,6 @@
-var _ = require("underscore");
+var _ = this._ || require("underscore");
+var exports = this.exports || {};
+
 
 // Nondeterministic functions
 
