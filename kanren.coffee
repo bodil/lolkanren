@@ -80,3 +80,14 @@ membero = ($v, list) ->
   return fail if _.isEmpty(list)
 
   disj(eq($v, _.first(list)), membero($v, _.rest(list)))
+
+exports =
+  conj: conj
+  disj: disj
+  lvar: lvar
+  isLVar: isLVar
+  ignorance: ignorance
+  unify: unify
+  eq: eq
+  run: run
+  membero: membero
